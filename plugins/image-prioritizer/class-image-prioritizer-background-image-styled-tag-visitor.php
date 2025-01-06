@@ -194,7 +194,7 @@ final class Image_Prioritizer_Background_Image_Styled_Tag_Visitor extends Image_
 				'rel'           => 'preload',
 				'fetchpriority' => 'high',
 				'as'            => 'image',
-				'href'          => $url,
+				'href'          => urlencode($url),
 				'media'         => 'screen',
 			),
 			$group->get_minimum_viewport_width(),
